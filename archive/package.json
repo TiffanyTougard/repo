@@ -1,0 +1,31 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "\"# repo\"",
+  "main": "index.js",
+  "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiffanyTougard/repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiffanyTougard/repo/issues"
+  },
+  "homepage": "https://github.com/TiffanyTougard/repo#readme",
+  "dependencies": {
+    "@angular/animations": "^5.2.4",
+    "@angular/cdk": "^5.2.0",
+    "@angular/material": "^5.2.0",
+    "express": "^4.16.2",
+    "hammerjs": "^2.0.8"
+  },
+  "devDependencies": {
+    "pm2": "^2.9.3"
+  }
+}
