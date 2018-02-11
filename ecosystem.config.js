@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:TiffanyTougard/repo.git',
       path: '/home/bitnami/repo',
-      'post-deploy': 'ng build && ng serve'
+      'post-deploy': 'ng build && ng serve --port 3000'
     }
   }
 }
