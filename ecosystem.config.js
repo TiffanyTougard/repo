@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'tiffanytougard',
-    script: './src/main.js'
+    script: './index.js'
   }],
   deploy: {
     production: {
@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:TiffanyTougard/repo.git',
       path: '/home/bitnami/repo',
-      'post-deploy': 'npm install && npm run nodemon --exec ./node_modules/.bin/ts-node -- "./src/main.ts" && pm2 startOrRestart ecosystem.config.js'
+      'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
 }
