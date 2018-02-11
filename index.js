@@ -23,7 +23,7 @@ app.use(function(req, res, next){
         return next();
     }
 
-    fs.createReadStream(staticRoot + './dist/index.html').pipe(res);
+    fs.createReadStream(staticRoot + 'dist/index.html').pipe(res);
 
 }); 
 
